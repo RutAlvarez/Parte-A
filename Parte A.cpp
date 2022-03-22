@@ -9,34 +9,59 @@ using namespace std;
 
 int main()
 {
-	int INTENTOS,ENTER,BACKSPACE  ;
-	INTENTOS =3;
-	ENTER =13;
-	BACKSPACE = 8;
-    vector<string> usuarios;
-    vector<string> claves;
-    char Opciones;
-    string Claves, Nombre, Apellido, Id, Gmail, Carrera, Ticket;
-    time_t DateTime = time(NULL);
+	    int INTENTOS,ENTER,BACKSPACE  ;
+	    INTENTOS =3;
+	    ENTER =13;
+	    BACKSPACE = 8;
+      patch-1
+    	vector<string> usuarios;
+    	vector<string> claves;
+    	char Opciones;
+    	string Claves, Nombre, Apellido, Id, Gmail, Carrera, Ticket;
+    	time_t DateTime = time(NULL);
 
-    // Se añaden usuarios al vector
-    usuarios.push_back("luis");
-    usuarios.push_back("jorge");
-    usuarios.push_back("james");
-    usuarios.push_back("johan");
-    usuarios.push_back("kevin");
+    	// Se añaden usuarios al vector
+    	usuarios.push_back("luis");
+    	usuarios.push_back("jorge");
+    	usuarios.push_back("james");
+    	usuarios.push_back("johan");
+    	usuarios.push_back("kevin");
 
-    // Se añaden claves al vector
-    claves.push_back("123");
-    claves.push_back("456");
-    claves.push_back("789");
-    claves.push_back("abc");
-    claves.push_back("efg");
+    	// Se añaden claves al vector
+    	claves.push_back("123");
+    	claves.push_back("456");
+    	claves.push_back("789");
+    	claves.push_back("abc");
+    	claves.push_back("efg");
 
-    string usuario, password;
+    	string usuario, password;
 
-    int contador = 0;
-    bool ingresa = false;
+    	int contador = 0;
+    	bool ingresa = false;
+      vector<string> usuarios;
+      vector<string> claves;
+      char Opciones;
+      string Claves, Nombre, Apellido, Id, Gmail, Carrera, Ticket;
+      time_t DateTime = time(NULL);
+
+      // Se añaden usuarios al vector
+      usuarios.push_back("luis");
+      usuarios.push_back("jorge");
+      usuarios.push_back("james");
+      usuarios.push_back("johan");
+      usuarios.push_back("kevin");
+
+      // Se añaden claves al vector
+      claves.push_back("123");
+      claves.push_back("456");
+      claves.push_back("789");
+      claves.push_back("abc");
+      claves.push_back("efg");
+
+      string usuario, password;
+
+      int contador = 0;
+      bool ingresa = false;
 
     do
     {
