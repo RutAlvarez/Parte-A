@@ -9,59 +9,34 @@ using namespace std;
 
 int main()
 {
-	    int INTENTOS,ENTER,BACKSPACE  ;
-	    INTENTOS =3;
-	    ENTER =13;
-	    BACKSPACE = 8;
-      patch-1
-    	vector<string> usuarios;
-    	vector<string> claves;
-    	char Opciones;
-    	string Claves, Nombre, Apellido, Id, Gmail, Carrera, Ticket;
-    	time_t DateTime = time(NULL);
+	int INTENTOS,ENTER,BACKSPACE  ;
+	INTENTOS =3;
+	ENTER =13;
+	BACKSPACE = 8;
+    vector<string> usuarios;
+    vector<string> claves;
+    char Opciones;
+    string Claves, Nombre, Apellido, Id, Gmail, Carrera, Ticket;
+    time_t DateTime = time(NULL);
 
-    	// Se a√±aden usuarios al vector
-    	usuarios.push_back("luis");
-    	usuarios.push_back("jorge");
-    	usuarios.push_back("james");
-    	usuarios.push_back("johan");
-    	usuarios.push_back("kevin");
+    // Se aÒaden usuarios al vector
+    usuarios.push_back("luis");
+    usuarios.push_back("jorge");
+    usuarios.push_back("james");
+    usuarios.push_back("johan");
+    usuarios.push_back("kevin");
 
-    	// Se a√±aden claves al vector
-    	claves.push_back("123");
-    	claves.push_back("456");
-    	claves.push_back("789");
-    	claves.push_back("abc");
-    	claves.push_back("efg");
+    // Se aÒaden claves al vector
+    claves.push_back("123");
+    claves.push_back("456");
+    claves.push_back("789");
+    claves.push_back("abc");
+    claves.push_back("efg");
 
-    	string usuario, password;
+    string usuario, password;
 
-    	int contador = 0;
-    	bool ingresa = false;
-      vector<string> usuarios;
-      vector<string> claves;
-      char Opciones;
-      string Claves, Nombre, Apellido, Id, Gmail, Carrera, Ticket;
-      time_t DateTime = time(NULL);
-
-      // Se a√±aden usuarios al vector
-      usuarios.push_back("luis");
-      usuarios.push_back("jorge");
-      usuarios.push_back("james");
-      usuarios.push_back("johan");
-      usuarios.push_back("kevin");
-
-      // Se a√±aden claves al vector
-      claves.push_back("123");
-      claves.push_back("456");
-      claves.push_back("789");
-      claves.push_back("abc");
-      claves.push_back("efg");
-
-      string usuario, password;
-
-      int contador = 0;
-      bool ingresa = false;
+    int contador = 0;
+    bool ingresa = false;
 
     do
     {
@@ -123,25 +98,25 @@ int main()
     else
     {
     	cout << "\n\n\tBienvenido al sistema" << endl << endl;
-	    printf(" Usted ingreso a nuestro sistema a esta hora y a est√° fecha: %s", ctime(&DateTime));
+	    printf(" Usted ingreso a nuestro sistema a esta hora y a est· fecha: %s", ctime(&DateTime));
 		cout << endl; 
 			
-		cout << " Cambie su contrase√±a por seguridad: "; 
+		cout << " Cambie su contraseÒa por seguridad: "; 
 		cin >> Claves;
 		cout << endl << endl << endl;
-		cout << " Su contrase√±a se ha actualizado √©xitosamente " << endl << endl << endl;
+		cout << " Su contraseÒa se ha actualizado Èxitosamente " << endl << endl << endl;
     	do
 		{
 			int NumTicket = 0;
 			
-			cout << " Nuestro men√∫ de opcines a realizar es la siguiente: " << endl << endl;
+			cout << " Nuestro men˙ de opcines a realizar es la siguiente: " << endl << endl;
 			
 			cout << " 1) Subir Ticket: " << endl;
 			cout << " 2) Ver tickets: " << endl;
 			cout << " 3) Salir: " << endl;
 			cout << endl << endl;
 			
-			cout << " Escoga el n√∫mero correspondiente a la opci√≥n, por favor: "; 
+			cout << " Escoga el n˙mero correspondiente a la opciÛn, por favor: "; 
 			cin >> Opciones;
 			
 			if (Opciones == '1'){
@@ -157,7 +132,7 @@ int main()
 				cin >> Ticket;
 				
 				cout << endl << endl << endl << endl;
-				cout << " Datos guardados √©xitosamente, gracias!" << endl;
+				cout << " Datos guardados Èxitosamente, gracias!" << endl;
 			}
 			else if (Opciones == '2'){
 				NumTicket = NumTicket + 1;
@@ -171,10 +146,10 @@ int main()
 			}
 			else if (Opciones == '3'){
 				cout << " Gracias por utilizar nuestro sistema!" << endl << endl;
-				printf(" Usted sali√≥  de nuestro sistema a esta hora y a est√° fecha: %s", ctime(&DateTime));
+				printf(" Usted saliÛ  de nuestro sistema a esta hora y a est· fecha: %s", ctime(&DateTime));
 			}
 			else {
-				cout << " El n√∫mero ingresado no existe, intente de nuevo..." << endl;
+				cout << " El n˙mero ingresado no existe, intente de nuevo..." << endl;
 			}	
 		} while (Opciones == '1' || Opciones == '2');   
     }
